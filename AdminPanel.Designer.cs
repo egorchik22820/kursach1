@@ -72,6 +72,7 @@
             Edit_button.TabIndex = 3;
             Edit_button.Text = "Изменить";
             Edit_button.UseVisualStyleBackColor = true;
+            Edit_button.Click += Edit_button_Click;
             // 
             // Delete_button
             // 

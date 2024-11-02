@@ -14,9 +14,7 @@ namespace kursach
     public partial class AdminPanel : Form
     {
         private DataSet _userSet = new DataSet();
-        private DataSet _deleteUserSet = new DataSet();
         private SqlDataAdapter _userAdapter;
-        private SqlDataAdapter _deleteUserAdapter;
         public AdminPanel()
         {
             InitializeComponent();
@@ -37,14 +35,15 @@ namespace kursach
             {
                 _userSet = new DataSet();
                 string selectUsers = "SELECT u.userName, t.TypeName \r\nFROM [kursach].[dbo].[progUsers] AS u \r\nINNER JOIN TypesOfUsers AS t ON u.TypeID = t.TypeID;";
-                _userAdapter = new SqlDataAdapter(selectUsers, sqlConnection);
+                string select1 = "select * from progUsers;";
+                _userAdapter = new SqlDataAdapter(select1 + selectUsers, sqlConnection);
                 _userAdapter.Fill(_userSet);
 
-                
+
 
                 //для DataGrid ставлю MultiSelect на false, чтобы пользователь не мог выделять сразу несколько строк
                 users_dataGridView.MultiSelect = false;
-                users_dataGridView.DataSource = _userSet.Tables[0];
+                users_dataGridView.DataSource = _userSet.Tables[1];
             }
 
         }
@@ -62,10 +61,13 @@ namespace kursach
                 if (result == DialogResult.Yes)
                 {
                     users_dataGridView.Rows.RemoveAt(selectedRowIndex);
+                    users_dataGridView.DataSource = _userSet.Tables[0];
+                    users_dataGridView.Rows.RemoveAt(selectedRowIndex);
                 }
 
 
                 SaveData();
+                users_dataGridView.DataSource = _userSet.Tables[1];
             }
             else MessageBox.Show("Пожалуйста, выберите запись для удаления.", "Удаление записи",
                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -74,13 +76,27 @@ namespace kursach
         private void SaveData()
         {
             SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(_userAdapter);
-            _userAdapter.Update(_userSet);
+            _userAdapter.Update(_userSet.Tables[0]);
+
         }
 
-        private void DeleteData()
+
+        private void Edit_button_Click(object sender, EventArgs e)
         {
-            SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(_deleteUserAdapter);
-            _deleteUserAdapter.Update(_deleteUserSet);
+            var selectedRowIndex = -1;
+            if (users_dataGridView.SelectedRows.Count > 0 &&
+                users_dataGridView.SelectedRows[0].Index < users_dataGridView.Rows.Count - 1)
+            {
+                selectedRowIndex = users_dataGridView.SelectedRows [0].Index;
+            }
+            else
+            {
+                MessageBox.Show("Вы не выбрали строку для редактирования!");
+                return;
+            }
+
+            EditPage editPage = new EditPage(selectedRowIndex, _userSet, _userAdapter);
+            editPage.ShowDialog();
         }
     }
 }

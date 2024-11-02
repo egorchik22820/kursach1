@@ -10,6 +10,9 @@
     <Compile Update="Autorization.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="EditPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UserPanel.cs">
       <SubType>Form</SubType>
     </Compile>
