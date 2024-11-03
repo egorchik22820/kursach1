@@ -53,7 +53,7 @@ namespace kursach
                     }
                     else
                     {
-                        UserPanel userPanel = new UserPanel();
+                        UserPanel userPanel = new UserPanel((Convert.ToInt32(row["UserID"].ToString())));
                         this.Hide();
                         userPanel.ShowDialog();
                         this.Show();

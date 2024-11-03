@@ -36,6 +36,7 @@ namespace kursach
                 _userSet = new DataSet();
                 string selectUsers = "SELECT u.userName, t.TypeName \r\nFROM [kursach].[dbo].[progUsers] AS u \r\nINNER JOIN TypesOfUsers AS t ON u.TypeID = t.TypeID;";
                 string select1 = "select * from progUsers;";
+                string select2 = "select * from Employees;";
                 _userAdapter = new SqlDataAdapter(select1 + selectUsers, sqlConnection);
                 _userAdapter.Fill(_userSet);
 
