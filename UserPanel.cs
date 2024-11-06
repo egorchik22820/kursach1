@@ -51,7 +51,7 @@ namespace kursach
                 _selectAdapter = new SqlDataAdapter(selectInfoEmployee + selectInfoUser + selectInfoProj + selectInfoTeams, sqlConnection);
                 _selectAdapter.Fill(_emloyeeSet);
 
-                //для DataGrid ставлю MultiSelect на false, чтобы пользователь не мог выделять сразу несколько строк
+                ///для DataGrid ставлю MultiSelect на false, чтобы пользователь не мог выделять сразу несколько строк
                 infoEmployee_dataGridView.MultiSelect = false;
                 infoEmployee_dataGridView.DataSource = _emloyeeSet.Tables[0];
 

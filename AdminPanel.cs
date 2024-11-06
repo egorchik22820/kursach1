@@ -34,17 +34,17 @@ namespace kursach
             if (sqlConnection.State == ConnectionState.Open)
             {
                 _userSet = new DataSet();
-                string selectUsers = "SELECT u.userName, t.TypeName \r\nFROM [kursach].[dbo].[progUsers] AS u \r\nINNER JOIN TypesOfUsers AS t ON u.TypeID = t.TypeID;";
+                string selectEmployees = "select E.FirstName + ' ' + E.LastName as 'ФИО', E.Position as 'Должность', U.UserName as 'Логин', T.TypeName as 'Права', E.PhoneNumber as 'Телефон' from Employees as E\r\njoin progUsers as U on U.UserID = E.UserID\r\njoin TypesOfUsers as T on T.TypeID = U.TypeID;";
                 string select1 = "select * from progUsers;";
                 string select2 = "select * from Employees;";
-                _userAdapter = new SqlDataAdapter(select1 + selectUsers, sqlConnection);
+                _userAdapter = new SqlDataAdapter(select2 + select1 + selectEmployees, sqlConnection);
                 _userAdapter.Fill(_userSet);
 
 
 
                 //для DataGrid ставлю MultiSelect на false, чтобы пользователь не мог выделять сразу несколько строк
                 users_dataGridView.MultiSelect = false;
-                users_dataGridView.DataSource = _userSet.Tables[1];
+                users_dataGridView.DataSource = _userSet.Tables[2];
             }
 
         }
@@ -62,13 +62,15 @@ namespace kursach
                 if (result == DialogResult.Yes)
                 {
                     users_dataGridView.Rows.RemoveAt(selectedRowIndex);
+                    users_dataGridView.DataSource = _userSet.Tables[1];
+                    users_dataGridView.Rows.RemoveAt(selectedRowIndex);
                     users_dataGridView.DataSource = _userSet.Tables[0];
                     users_dataGridView.Rows.RemoveAt(selectedRowIndex);
                 }
 
 
                 SaveData();
-                users_dataGridView.DataSource = _userSet.Tables[1];
+                users_dataGridView.DataSource = _userSet.Tables[2];
             }
             else MessageBox.Show("Пожалуйста, выберите запись для удаления.", "Удаление записи",
                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -77,8 +79,7 @@ namespace kursach
         private void SaveData()
         {
             SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(_userAdapter);
-            _userAdapter.Update(_userSet.Tables[0]);
-
+            _userAdapter.Update(_userSet);
         }
 
 

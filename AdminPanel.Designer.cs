@@ -38,11 +38,13 @@
             // 
             // users_dataGridView
             // 
+            users_dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            users_dataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             users_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             users_dataGridView.Location = new Point(12, 42);
             users_dataGridView.Name = "users_dataGridView";
             users_dataGridView.RowHeadersWidth = 51;
-            users_dataGridView.Size = new Size(471, 388);
+            users_dataGridView.Size = new Size(740, 388);
             users_dataGridView.TabIndex = 0;
             // 
             // label1
@@ -56,7 +58,7 @@
             // 
             // Add_button
             // 
-            Add_button.Location = new Point(189, 12);
+            Add_button.Location = new Point(458, 12);
             Add_button.Name = "Add_button";
             Add_button.Size = new Size(94, 29);
             Add_button.TabIndex = 2;
@@ -66,7 +68,7 @@
             // 
             // Edit_button
             // 
-            Edit_button.Location = new Point(289, 12);
+            Edit_button.Location = new Point(558, 12);
             Edit_button.Name = "Edit_button";
             Edit_button.Size = new Size(94, 29);
             Edit_button.TabIndex = 3;
@@ -76,7 +78,7 @@
             // 
             // Delete_button
             // 
-            Delete_button.Location = new Point(389, 12);
+            Delete_button.Location = new Point(658, 12);
             Delete_button.Name = "Delete_button";
             Delete_button.Size = new Size(94, 29);
             Delete_button.TabIndex = 4;
