@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\egor\\Downloads\\kursach\\kursach\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\downloads\\kursach\\kursach\\adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\downloads\\kursach\\kursach\\adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\downloads\\kursach\\kursach\\adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\downloads\\kursach\\kursach\\userstypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,19 +54,32 @@
       "DocumentGroups": [
         {
           "DockedHeight": 283,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AddUser.cs",
               "DocumentMoniker": "C:\\Users\\egor\\Downloads\\kursach\\kursach\\AddUser.cs",
               "RelativeDocumentMoniker": "AddUser.cs",
               "ToolTip": "C:\\Users\\egor\\Downloads\\kursach\\kursach\\AddUser.cs",
               "RelativeToolTip": "AddUser.cs",
-              "ViewState": "AQIAAHsAAAAAAAAAAAAAAHgAAAAhAAAA",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAQwIAAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T16:34:33.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminPanel.cs",
+              "DocumentMoniker": "C:\\Users\\egor\\Downloads\\kursach\\kursach\\AdminPanel.cs",
+              "RelativeDocumentMoniker": "AdminPanel.cs",
+              "ToolTip": "C:\\Users\\egor\\Downloads\\kursach\\kursach\\AdminPanel.cs*",
+              "RelativeToolTip": "AdminPanel.cs*",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAwGwAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T16:29:17.911Z",
               "EditorCaption": ""
             },
             {
@@ -88,24 +101,11 @@
               "Title": "AdminPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\egor\\Downloads\\kursach\\kursach\\AdminPanel.cs",
               "RelativeDocumentMoniker": "AdminPanel.cs",
-              "ToolTip": "C:\\Users\\egor\\Downloads\\kursach\\kursach\\AdminPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "AdminPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "ToolTip": "C:\\Users\\egor\\Downloads\\kursach\\kursach\\AdminPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]*",
+              "RelativeToolTip": "AdminPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T15:29:50.558Z",
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminPanel.cs",
-              "DocumentMoniker": "C:\\Users\\egor\\Downloads\\kursach\\kursach\\AdminPanel.cs",
-              "RelativeDocumentMoniker": "AdminPanel.cs",
-              "ToolTip": "C:\\Users\\egor\\Downloads\\kursach\\kursach\\AdminPanel.cs",
-              "RelativeToolTip": "AdminPanel.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAuwB0AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T16:29:17.911Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -116,8 +116,7 @@
               "ToolTip": "C:\\Users\\egor\\Downloads\\kursach\\kursach\\AddUser.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "AddUser.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T16:29:58.146Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "WhenOpened": "2024-11-01T16:29:58.146Z"
             },
             {
               "$type": "Document",
@@ -129,8 +128,7 @@
               "RelativeToolTip": "UsersTypes.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAA2wBMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T15:59:11.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T15:59:11.536Z"
             },
             {
               "$type": "Document",

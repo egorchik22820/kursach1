@@ -34,17 +34,23 @@ namespace kursach
             if (sqlConnection.State == ConnectionState.Open)
             {
                 _userSet = new DataSet();
-                string selectEmployees = "select E.FirstName + ' ' + E.LastName as 'ФИО', E.Position as 'Должность', U.UserName as 'Логин', T.TypeName as 'Права', E.PhoneNumber as 'Телефон' from Employees as E\r\njoin progUsers as U on U.UserID = E.UserID\r\njoin TypesOfUsers as T on T.TypeID = U.TypeID;";
+                string selectEmployees = "select E.FirstName + ' ' + E.LastName as 'ФИО', E.Position as 'Должность', U.UserName as 'Логин', T.TypeName as 'Права', E.PhoneNumber as 'Телефон', E.UserID, E.EmployeeID from Employees as E\r\njoin progUsers as U on U.UserID = E.UserID\r\njoin TypesOfUsers as T on T.TypeID = U.TypeID;";
                 string select1 = "select * from progUsers;";
                 string select2 = "select * from Employees;";
                 _userAdapter = new SqlDataAdapter(select2 + select1 + selectEmployees, sqlConnection);
-                _userAdapter.Fill(_userSet);
+                _userAdapter.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                _userAdapter.Fill(_userSet, "Employees");
+                _userAdapter.Fill(_userSet, "progUsers");
+                _userAdapter.Fill(_userSet, selectEmployees);
 
 
 
                 //для DataGrid ставлю MultiSelect на false, чтобы пользователь не мог выделять сразу несколько строк
                 users_dataGridView.MultiSelect = false;
                 users_dataGridView.DataSource = _userSet.Tables[2];
+                users_dataGridView.Columns["UserID"].Visible = false;
+                users_dataGridView.Columns["EmployeeID"].Visible = false;
+
             }
 
         }
@@ -61,11 +67,31 @@ namespace kursach
 
                 if (result == DialogResult.Yes)
                 {
+                    
+
+                    DataGridViewRow gridRow = users_dataGridView.Rows[selectedRowIndex];
+                    DataTable table = (DataTable)users_dataGridView.DataSource; // Получаем DataTable, привязанный к DataGridView
+                    DataRow dataRow = table.NewRow(); // Создаем новый DataRow
+
+                    // Копируем данные из DataGridViewRow в DataRow
+                    foreach (DataGridViewCell cell in gridRow.Cells)
+                    {
+                        // Проверяем, есть ли соответствующий столбец в таблице данных
+                        if (table.Columns.Contains(cell.OwningColumn.Name))
+                        {
+                            dataRow[cell.OwningColumn.Name] = cell.Value ?? DBNull.Value;
+                        }
+                    }
+
+                    int index = _userSet.Tables[0].Rows.IndexOf(_userSet.Tables[0].Rows[4]);
+
+
+                    DataRow row = _userSet.Tables[0].Rows.Find(Convert.ToInt32(dataRow["EmployeeID"]));// не обновляет базу
+                    //DataRow row = _userSet.Tables[0].Rows.Find(22);
+
+                    _userSet.Tables[0].Rows.Remove(row);
                     users_dataGridView.Rows.RemoveAt(selectedRowIndex);
-                    users_dataGridView.DataSource = _userSet.Tables[1];
-                    users_dataGridView.Rows.RemoveAt(selectedRowIndex);
-                    users_dataGridView.DataSource = _userSet.Tables[0];
-                    users_dataGridView.Rows.RemoveAt(selectedRowIndex);
+                    
                 }
 
 
@@ -79,7 +105,8 @@ namespace kursach
         private void SaveData()
         {
             SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(_userAdapter);
-            _userAdapter.Update(_userSet);
+            _userAdapter.Update(_userSet.Tables[0]);
+            //_userAdapter.Update(_userSet.Tables[1]);
         }
 
 
