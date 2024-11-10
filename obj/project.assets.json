@@ -1692,11 +1692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\egor\\Downloads\\kursach\\kursach\\kursach.csproj",
+      "projectUniqueName": "C:\\Users\\egor\\Source\\Repos\\kursach1\\kursach.csproj",
       "projectName": "kursach",
-      "projectPath": "C:\\Users\\egor\\Downloads\\kursach\\kursach\\kursach.csproj",
+      "projectPath": "C:\\Users\\egor\\Source\\Repos\\kursach1\\kursach.csproj",
       "packagesPath": "C:\\Users\\egor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\egor\\Downloads\\kursach\\kursach\\obj\\",
+      "outputPath": "C:\\Users\\egor\\Source\\Repos\\kursach1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\egor\\AppData\\Roaming\\NuGet\\NuGet.Config",
