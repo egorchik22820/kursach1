@@ -99,11 +99,22 @@ namespace kursach
                     int index = _employeeSet.Tables[0].Rows.IndexOf(_userSet.Tables[0].Rows[4]);
 
 
-                    DataRow row = _employeeSet.Tables[0].Rows.Find(Convert.ToInt32(dataRow["EmployeeID"]));// не обновляет базу
-                    //DataRow row = _userSet.Tables[0].Rows.Find(22);
+                    DataRow row = _employeeSet.Tables[0].Rows.Find(Convert.ToInt32(dataRow["EmployeeID"]));
 
-                    _employeeSet.Tables[0].Rows.Remove(row);
                     users_dataGridView.Rows.RemoveAt(selectedRowIndex);
+
+                    users_dataGridView.DataSource = _employeeSet.Tables[0];
+
+                    int idForProgUsers = Convert.ToInt32(dataRow["UserID"]);
+
+                    users_dataGridView.Rows.RemoveAt(_employeeSet.Tables[0].Rows.IndexOf(row));
+                    SaveData();
+
+
+                    DataRow rowU = _userSet.Tables[0].Rows.Find(idForProgUsers);
+
+                    users_dataGridView.DataSource = _userSet.Tables[0];
+                    users_dataGridView.Rows.RemoveAt(_userSet.Tables[0].Rows.IndexOf(rowU));
 
                 }
 
@@ -122,9 +133,6 @@ namespace kursach
 
             SqlCommandBuilder sqlCommandBuilder2 = new SqlCommandBuilder(_userAdapter);
             _userAdapter.Update(_userSet);
-
-            //SqlCommandBuilder sqlCommandBuilder3 = new SqlCommandBuilder(_selectAdapter);
-            //_selectAdapter.Update(_selectSet);
         }
 
 
