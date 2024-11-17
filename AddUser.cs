@@ -129,6 +129,7 @@ namespace kursach
                 !string.IsNullOrWhiteSpace(Name_textBox.Text) && !string.IsNullOrWhiteSpace(LastName_textBox.Text))
             {
                 _userSet.Tables[0].Rows.Add(newRow1);
+                SaveData();
                 _employeesSet.Tables[0].Rows.Add(newRow2);
                 SaveData();
                 MessageBox.Show("Пользователь добавлен!");

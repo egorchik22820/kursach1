@@ -96,7 +96,7 @@ namespace kursach
                         }
                     }
 
-                    int index = _employeeSet.Tables[0].Rows.IndexOf(_userSet.Tables[0].Rows[4]);
+                    //int index = _employeeSet.Tables[0].Rows.IndexOf(_userSet.Tables[0].Rows[4]);
 
 
                     DataRow row = _employeeSet.Tables[0].Rows.Find(Convert.ToInt32(dataRow["EmployeeID"]));
@@ -146,12 +146,40 @@ namespace kursach
             }
             else
             {
-                MessageBox.Show("Вы не выбрали строку для редактирования!");
+                MessageBox.Show("Пожалуйста, выберите запись для редактирования.", "Редактирование записи",
+                MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            EditPage editPage = new EditPage(selectedRowIndex, _userSet, _userAdapter);
+            EditPage editPage = new EditPage(selectedRowIndex, _userSet, _employeeSet, _selectSet, _userAdapter, _employeeAdapter, _selectAdapter);
             editPage.ShowDialog();
+        }
+
+        private void Search_textBox_TextChanged(object sender, EventArgs e)
+        {
+            (users_dataGridView.DataSource as DataTable).DefaultView.RowFilter = $"ФИО like '%{Search_textBox.Text}%'";
+        }
+
+        private void openProj_button_Click(object sender, EventArgs e)
+        {
+            Projects projects = new Projects();
+            this.Hide();
+            projects.ShowDialog();
+            this.Show();
+        }
+
+        private void openProjRes_button_Click(object sender, EventArgs e)
+        {
+            ProjResources res = new ProjResources();
+            this.Hide();
+            res.ShowDialog();
+            this.Show();
+        }
+
+        private void openProjFinbutton_Click(object sender, EventArgs e)
+        {
+            ProjFin projFin = new ProjFin();
+            this.Hide(); projFin.ShowDialog(); this.Show();
         }
     }
 }

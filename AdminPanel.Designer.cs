@@ -33,6 +33,11 @@
             Add_button = new Button();
             Edit_button = new Button();
             Delete_button = new Button();
+            Search_textBox = new TextBox();
+            label2 = new Label();
+            openProj_button = new Button();
+            openProjRes_button = new Button();
+            openProjFinbutton = new Button();
             ((System.ComponentModel.ISupportInitialize)users_dataGridView).BeginInit();
             SuspendLayout();
             // 
@@ -44,7 +49,7 @@
             users_dataGridView.Location = new Point(12, 42);
             users_dataGridView.Name = "users_dataGridView";
             users_dataGridView.RowHeadersWidth = 51;
-            users_dataGridView.Size = new Size(740, 388);
+            users_dataGridView.Size = new Size(740, 323);
             users_dataGridView.TabIndex = 0;
             // 
             // label1
@@ -86,11 +91,63 @@
             Delete_button.UseVisualStyleBackColor = true;
             Delete_button.Click += Delete_button_Click;
             // 
+            // Search_textBox
+            // 
+            Search_textBox.Location = new Point(12, 401);
+            Search_textBox.Name = "Search_textBox";
+            Search_textBox.Size = new Size(251, 27);
+            Search_textBox.TabIndex = 5;
+            Search_textBox.TextChanged += Search_textBox_TextChanged;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(12, 378);
+            label2.Name = "label2";
+            label2.Size = new Size(52, 20);
+            label2.TabIndex = 6;
+            label2.Text = "Поиск";
+            // 
+            // openProj_button
+            // 
+            openProj_button.Location = new Point(406, 378);
+            openProj_button.Name = "openProj_button";
+            openProj_button.Size = new Size(94, 29);
+            openProj_button.TabIndex = 7;
+            openProj_button.Text = "Проекты";
+            openProj_button.UseVisualStyleBackColor = true;
+            openProj_button.Click += openProj_button_Click;
+            // 
+            // openProjRes_button
+            // 
+            openProjRes_button.Location = new Point(506, 378);
+            openProjRes_button.Name = "openProjRes_button";
+            openProjRes_button.Size = new Size(146, 29);
+            openProjRes_button.TabIndex = 8;
+            openProjRes_button.Text = "Учет ресурсов";
+            openProjRes_button.UseVisualStyleBackColor = true;
+            openProjRes_button.Click += openProjRes_button_Click;
+            // 
+            // openProjFinbutton
+            // 
+            openProjFinbutton.Location = new Point(658, 378);
+            openProjFinbutton.Name = "openProjFinbutton";
+            openProjFinbutton.Size = new Size(94, 29);
+            openProjFinbutton.TabIndex = 9;
+            openProjFinbutton.Text = "Затраты";
+            openProjFinbutton.UseVisualStyleBackColor = true;
+            openProjFinbutton.Click += openProjFinbutton_Click;
+            // 
             // AdminPanel
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(openProjFinbutton);
+            Controls.Add(openProjRes_button);
+            Controls.Add(openProj_button);
+            Controls.Add(label2);
+            Controls.Add(Search_textBox);
             Controls.Add(Delete_button);
             Controls.Add(Edit_button);
             Controls.Add(Add_button);
@@ -111,5 +168,10 @@
         private Button Add_button;
         private Button Edit_button;
         private Button Delete_button;
+        private TextBox Search_textBox;
+        private Label label2;
+        private Button openProj_button;
+        private Button openProjRes_button;
+        private Button openProjFinbutton;
     }
 }

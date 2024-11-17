@@ -13,6 +13,15 @@
     <Compile Update="EditPage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Projects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ProjFin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ProjResources.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UserPanel.cs">
       <SubType>Form</SubType>
     </Compile>
