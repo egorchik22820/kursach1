@@ -86,6 +86,7 @@
             projects_dataGridView.Size = new Size(740, 323);
             projects_dataGridView.TabIndex = 5;
             projects_dataGridView.CellEndEdit += projects_dataGridView_CellEndEdit;
+            projects_dataGridView.KeyDown += projects_dataGridView_KeyDown_1;
             // 
             // Projects
             // 

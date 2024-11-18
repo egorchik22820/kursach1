@@ -44,5 +44,10 @@ namespace kursach
                 projectsFin_dataGridView.Columns["ProjectID"].Visible = false;
             }
         }
+
+        private void Add_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -14,6 +14,7 @@ namespace kursach
 {
     public partial class Projects : Form
     {
+        private bool _isEditing = false;
         private DataSet _projSet;
         //private DataSet _projResSet;
         //private DataSet _projFinSet;
@@ -32,7 +33,7 @@ namespace kursach
             InitializeComponent();
 
             // Подписываемся на событие
-            projects_dataGridView.CellEndEdit += new DataGridViewCellEventHandler(projects_dataGridView_CellEndEdit);
+            //projects_dataGridView.CellEndEdit += new DataGridViewCellEventHandler(projects_dataGridView_CellEndEdit);
         }
 
         private void Projects_Activated(object sender, EventArgs e)
@@ -78,7 +79,7 @@ namespace kursach
                 projects_dataGridView.Columns["ProjectID"].Visible = false;
 
                 // Подписываемся на событие
-                //projects_dataGridView.CellEndEdit += new DataGridViewCellEventHandler(projects_dataGridView_CellEndEdit);
+                ////projects_dataGridView.CellEndEdit += new DataGridViewCellEventHandler(projects_dataGridView_CellEndEdit);
 
             }
         }
@@ -132,6 +133,8 @@ namespace kursach
 
         private void projects_dataGridView_CellEndEdit(object sender, DataGridViewCellEventArgs e)// коряво работает
         {
+            if (_isEditing) return;
+            _isEditing = true;
             try
             {
                 // Сохраняем изменения в базе данных
@@ -143,6 +146,28 @@ namespace kursach
             catch (Exception ex)
             {
                 MessageBox.Show("Ошибка при сохранении изменений: " + ex.Message);
+            }
+            finally
+            {
+                _isEditing = false;
+            }
+        }
+
+        
+
+        private void projects_dataGridView_KeyDown_1(object sender, KeyEventArgs e)//не работает
+        {
+            // Проверяем, что находимся в режиме редактирования и была нажата клавиша Enter
+            if (projects_dataGridView.IsCurrentCellDirty && e.KeyCode == Keys.Enter)
+            {
+                // Завершаем редактирование текущей ячейки
+                projects_dataGridView.EndEdit();
+
+                // Ваш код для сохранения данных
+                SaveData();
+
+                // Отменяем дальнейшую обработку события Enter, чтобы не было лишнего переноса строки
+                e.Handled = true;
             }
         }
     }

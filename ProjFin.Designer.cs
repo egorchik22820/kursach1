@@ -62,6 +62,7 @@
             Add_button.TabIndex = 17;
             Add_button.Text = "Добавить";
             Add_button.UseVisualStyleBackColor = true;
+            Add_button.Click += Add_button_Click;
             // 
             // label1
             // 
