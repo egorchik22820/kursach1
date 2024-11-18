@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\egor\\source\\repos\\kursach1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\source\\repos\\kursach1\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\source\\repos\\kursach1\\adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|C:\\Users\\egor\\source\\repos\\kursach1\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\source\\repos\\kursach1\\addproj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:addproj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\source\\repos\\kursach1\\addproj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:addproj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\source\\repos\\kursach1\\adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|C:\\Users\\egor\\source\\repos\\kursach1\\adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|C:\\Users\\egor\\source\\repos\\kursach1\\projfin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:projfin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\source\\repos\\kursach1\\projfin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,32 +43,16 @@
       "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:projresources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\source\\repos\\kursach1\\projfin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:projfin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\source\\repos\\kursach1\\projresources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|C:\\Users\\egor\\source\\repos\\kursach1\\projresources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:projresources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\source\\repos\\kursach1\\adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|C:\\Users\\egor\\source\\repos\\kursach1\\adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\source\\repos\\kursach1\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\source\\repos\\kursach1\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\source\\repos\\kursach1\\autorization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:autorization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\source\\repos\\kursach1\\adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\source\\repos\\kursach1\\editpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|C:\\Users\\egor\\source\\repos\\kursach1\\editpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:editpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|C:\\Users\\egor\\source\\repos\\kursach1\\adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|solutionrelative:adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D0FF9517-A8E3-4094-B5DB-C634EE4ECB41}|kursach.csproj|c:\\users\\egor\\source\\repos\\kursach1\\userstypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,11 +86,62 @@
       "DocumentGroups": [
         {
           "DockedHeight": 283,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "AddProj.cs",
+              "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\AddProj.cs",
+              "RelativeDocumentMoniker": "AddProj.cs",
+              "ToolTip": "C:\\Users\\egor\\source\\repos\\kursach1\\AddProj.cs",
+              "RelativeToolTip": "AddProj.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAqwCQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T10:31:39.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Projects.cs",
+              "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\Projects.cs",
+              "RelativeDocumentMoniker": "Projects.cs",
+              "ToolTip": "C:\\Users\\egor\\source\\repos\\kursach1\\Projects.cs*",
+              "RelativeToolTip": "Projects.cs*",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAAwFAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T00:46:33.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminPanel.cs",
+              "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\AdminPanel.cs",
+              "RelativeDocumentMoniker": "AdminPanel.cs",
+              "ToolTip": "C:\\Users\\egor\\source\\repos\\kursach1\\AdminPanel.cs",
+              "RelativeToolTip": "AdminPanel.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAAALYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T16:29:17.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Projects.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\Projects.cs",
+              "RelativeDocumentMoniker": "Projects.cs",
+              "ToolTip": "C:\\Users\\egor\\source\\repos\\kursach1\\Projects.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]*",
+              "RelativeToolTip": "Projects.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T00:44:16.502Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ProjFin.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\ProjFin.cs",
               "RelativeDocumentMoniker": "ProjFin.cs",
@@ -94,7 +153,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "AddProj.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\AddProj.cs",
+              "RelativeDocumentMoniker": "AddProj.cs",
+              "ToolTip": "C:\\Users\\egor\\source\\repos\\kursach1\\AddProj.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "AddProj.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T10:25:13.64Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddUser.cs",
+              "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\AddUser.cs",
+              "RelativeDocumentMoniker": "AddUser.cs",
+              "ToolTip": "C:\\Users\\egor\\source\\repos\\kursach1\\AddUser.cs",
+              "RelativeToolTip": "AddUser.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAAAIwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T16:34:33.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddUser.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\AddUser.cs",
+              "RelativeDocumentMoniker": "AddUser.cs",
+              "ToolTip": "C:\\Users\\egor\\source\\repos\\kursach1\\AddUser.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "AddUser.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T16:29:58.146Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProjFin.cs",
+              "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\ProjFin.cs",
+              "RelativeDocumentMoniker": "ProjFin.cs",
+              "ToolTip": "C:\\Users\\egor\\source\\repos\\kursach1\\ProjFin.cs",
+              "RelativeToolTip": "ProjFin.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAACsAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T01:22:18.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProjResources.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\ProjResources.cs",
+              "RelativeDocumentMoniker": "ProjResources.cs",
+              "ToolTip": "C:\\Users\\egor\\source\\repos\\kursach1\\ProjResources.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "ProjResources.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T01:07:33.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ProjResources.cs",
               "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\ProjResources.cs",
               "RelativeDocumentMoniker": "ProjResources.cs",
@@ -107,106 +226,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Projects.cs",
-              "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\Projects.cs",
-              "RelativeDocumentMoniker": "Projects.cs",
-              "ToolTip": "C:\\Users\\egor\\source\\repos\\kursach1\\Projects.cs",
-              "RelativeToolTip": "Projects.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAYwDcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T00:46:33.045Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProjResources.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\ProjResources.cs",
-              "RelativeDocumentMoniker": "ProjResources.cs",
-              "ToolTip": "C:\\Users\\egor\\source\\repos\\kursach1\\ProjResources.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "ProjResources.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T01:07:33.604Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminPanel.cs",
-              "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\AdminPanel.cs",
-              "RelativeDocumentMoniker": "AdminPanel.cs",
-              "ToolTip": "C:\\Users\\egor\\source\\repos\\kursach1\\AdminPanel.cs",
-              "RelativeToolTip": "AdminPanel.cs",
-              "ViewState": "AQIAAKgAAAAAAAAAAAApwLUAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T16:29:17.911Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProjFin.cs",
-              "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\ProjFin.cs",
-              "RelativeDocumentMoniker": "ProjFin.cs",
-              "ToolTip": "C:\\Users\\egor\\source\\repos\\kursach1\\ProjFin.cs",
-              "RelativeToolTip": "ProjFin.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAAACsAAABOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T01:22:18.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "AdminPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\AdminPanel.cs",
               "RelativeDocumentMoniker": "AdminPanel.cs",
               "ToolTip": "C:\\Users\\egor\\source\\repos\\kursach1\\AdminPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "AdminPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T15:29:50.558Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "WhenOpened": "2024-11-01T15:29:50.558Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "AddUser.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\AddUser.cs",
-              "RelativeDocumentMoniker": "AddUser.cs",
-              "ToolTip": "C:\\Users\\egor\\source\\repos\\kursach1\\AddUser.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "AddUser.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T16:29:58.146Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Projects.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\Projects.cs",
-              "RelativeDocumentMoniker": "Projects.cs",
-              "ToolTip": "C:\\Users\\egor\\source\\repos\\kursach1\\Projects.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "Projects.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T00:44:16.502Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddUser.cs",
-              "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\AddUser.cs",
-              "RelativeDocumentMoniker": "AddUser.cs",
-              "ToolTip": "C:\\Users\\egor\\source\\repos\\kursach1\\AddUser.cs",
-              "RelativeToolTip": "AddUser.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAAAGgAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T16:34:33.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Autorization.cs",
               "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\Autorization.cs",
               "RelativeDocumentMoniker": "Autorization.cs",
@@ -219,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "EditPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\EditPage.cs",
               "RelativeDocumentMoniker": "EditPage.cs",
@@ -230,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "EditPage.cs",
               "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\EditPage.cs",
               "RelativeDocumentMoniker": "EditPage.cs",
@@ -242,7 +273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "UsersTypes.cs",
               "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\UsersTypes.cs",
               "RelativeDocumentMoniker": "UsersTypes.cs",
@@ -254,7 +285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "UserPanel.cs",
               "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\UserPanel.cs",
               "RelativeDocumentMoniker": "UserPanel.cs",
@@ -267,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Autorization.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\Autorization.cs",
               "RelativeDocumentMoniker": "Autorization.cs",
@@ -278,7 +309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "UserPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\egor\\source\\repos\\kursach1\\UserPanel.cs",
               "RelativeDocumentMoniker": "UserPanel.cs",

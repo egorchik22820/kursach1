@@ -44,6 +44,7 @@
             Delete_button.TabIndex = 9;
             Delete_button.Text = "Удалить";
             Delete_button.UseVisualStyleBackColor = true;
+            Delete_button.Click += Delete_button_Click;
             // 
             // Edit_button
             // 
@@ -53,6 +54,7 @@
             Edit_button.TabIndex = 8;
             Edit_button.Text = "Изменить";
             Edit_button.UseVisualStyleBackColor = true;
+            Edit_button.Click += Edit_button_Click;
             // 
             // Add_button
             // 
@@ -62,6 +64,7 @@
             Add_button.TabIndex = 7;
             Add_button.Text = "Добавить";
             Add_button.UseVisualStyleBackColor = true;
+            Add_button.Click += Add_button_Click;
             // 
             // label1
             // 
@@ -82,6 +85,7 @@
             projects_dataGridView.RowHeadersWidth = 51;
             projects_dataGridView.Size = new Size(740, 323);
             projects_dataGridView.TabIndex = 5;
+            projects_dataGridView.CellEndEdit += projects_dataGridView_CellEndEdit;
             // 
             // Projects
             // 

@@ -170,3 +170,4 @@ C:\Users\egor\source\repos\kursach1\obj\Debug\net8.0-windows\ref\kursach.dll
 C:\Users\egor\source\repos\kursach1\obj\Debug\net8.0-windows\kursach.Projects.resources
 C:\Users\egor\source\repos\kursach1\obj\Debug\net8.0-windows\kursach.ProjResources.resources
 C:\Users\egor\source\repos\kursach1\obj\Debug\net8.0-windows\kursach.ProjFin.resources
+C:\Users\egor\source\repos\kursach1\obj\Debug\net8.0-windows\kursach.AddProj.resources
