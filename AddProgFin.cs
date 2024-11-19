@@ -66,7 +66,7 @@ namespace kursach
         {
             DataRow newRow = _projFinSet.Tables[0].NewRow();
 
-            newRow["ProjectID"] = ProjectName_comboBox.SelectedIndex + 1;
+            newRow["ProjectID"] = (ProjectName_comboBox.SelectedItem as ProjectsClass).ProjID.ToString();
             newRow["ExpenseDescription"] = Describtion_textBox.Text.ToString();
             newRow["Amount"] = Amount_textBox.Text.ToString();
             newRow["Date"] = Date_textBox.Text.ToString();

@@ -85,12 +85,12 @@ namespace kursach
             _projFinSet.Clear();
             _projFinAdapter.Fill(_projFinSet);
 
-            SqlCommandBuilder sqlCommandBuilder3 = new SqlCommandBuilder(_selectAdapter);
-            _selectAdapter.Update(_selectSet.Tables[0]);
-            _selectSet.AcceptChanges();
+            //SqlCommandBuilder sqlCommandBuilder3 = new SqlCommandBuilder(_selectAdapter);
+            //_selectAdapter.Update(_selectSet.Tables[0]);
+            //_selectSet.AcceptChanges();
 
-            _selectSet.Clear();
-            _selectAdapter.Fill(_selectSet);
+            //_selectSet.Clear();
+            //_selectAdapter.Fill(_selectSet);
 
 
 
@@ -147,7 +147,19 @@ namespace kursach
 
         private void Edit_button_Click(object sender, EventArgs e)
         {
-            var selectedRowIndex = projectsFin_dataGridView.SelectedRows[0].Index;
+            var selectedRowIndex = -1;
+            if (projectsFin_dataGridView.SelectedRows.Count > 0 &&
+                projectsFin_dataGridView.SelectedRows[0].Index < projectsFin_dataGridView.Rows.Count - 1)
+            {
+                selectedRowIndex = projectsFin_dataGridView.SelectedRows[0].Index;
+            }
+            else
+            {
+                MessageBox.Show("Пожалуйста, выберите запись для редактирования.", "Редактирование записи",
+                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            selectedRowIndex = projectsFin_dataGridView.SelectedRows[0].Index;
             DataGridViewRow gridRow = projectsFin_dataGridView.Rows[selectedRowIndex];
             DataTable table = (DataTable)projectsFin_dataGridView.DataSource; // Получаем DataTable, привязанный к DataGridView
             DataRow dataRow = table.NewRow(); // Создаем новый DataRow
@@ -167,9 +179,9 @@ namespace kursach
 
             DataRow row = _projFinSet.Tables[0].Rows.Find(Convert.ToInt32(dataRow["FinanceID"]));
 
-            int idForProgUsers = Convert.ToInt32(dataRow["FinanceID"]);
+            int id = Convert.ToInt32(dataRow["FinanceID"]);
 
-            EditProjFin editProjFin = new EditProjFin(idForProgUsers,
+            EditProjFin editProjFin = new EditProjFin(id,
                                                         _projFinSet, _projFinAdapter,
                                                         _projSet, _projAdapter);
             editProjFin.Show();

@@ -151,7 +151,30 @@ namespace kursach
                 return;
             }
 
-            EditPage editPage = new EditPage(selectedRowIndex, _userSet, _employeeSet, _selectSet, _userAdapter, _employeeAdapter, _selectAdapter);
+            DataGridViewRow gridRow = users_dataGridView.Rows[selectedRowIndex];
+            DataTable table = (DataTable)users_dataGridView.DataSource; // Получаем DataTable, привязанный к DataGridView
+            DataRow dataRow = table.NewRow(); // Создаем новый DataRow
+
+            // Копируем данные из DataGridViewRow в DataRow
+            foreach (DataGridViewCell cell in gridRow.Cells)
+            {
+                // Проверяем, есть ли соответствующий столбец в таблице данных
+                if (table.Columns.Contains(cell.OwningColumn.Name))
+                {
+                    dataRow[cell.OwningColumn.Name] = cell.Value ?? DBNull.Value;
+                }
+            }
+
+            //int index = _employeeSet.Tables[0].Rows.IndexOf(_userSet.Tables[0].Rows[4]);
+
+
+            DataRow row = _employeeSet.Tables[0].Rows.Find(Convert.ToInt32(dataRow["EmployeeID"]));
+
+            int idEmp = Convert.ToInt32(dataRow["EmployeeID"]);
+            int idUser = Convert.ToInt32(dataRow["UserID"]);
+
+
+            EditPage editPage = new EditPage(idEmp, idUser, _userSet, _employeeSet, _selectSet, _userAdapter, _employeeAdapter, _selectAdapter);
             editPage.ShowDialog();
         }
 

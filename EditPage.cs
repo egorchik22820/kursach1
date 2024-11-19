@@ -26,19 +26,21 @@ namespace kursach
         private SqlDataAdapter _typeAdapter;
 
         private int _itemID;
+        private int _itemIDforUsers;
         private List<UsersTypes> _usersTypesList = new List<UsersTypes>();
         public EditPage()
         {
             InitializeComponent();
         }
 
-        public EditPage(int itemID,
+        public EditPage(int itemID, int itemIDforUsers,
                         DataSet userSet, DataSet employeeSet, DataSet selectSet,
                         SqlDataAdapter userAdapter, SqlDataAdapter employeeAdapter, SqlDataAdapter selectAdapter)
         {
             InitializeComponent();
 
             _itemID = itemID;
+            _itemIDforUsers = itemIDforUsers;
 
             _userSet = userSet;
             _employeeSet = employeeSet;
@@ -48,10 +50,10 @@ namespace kursach
             _employeeAdapter = employeeAdapter;
             _selectAdapter = selectAdapter;
 
-            var row1 = _userSet.Tables[0].Rows[_itemID + 22];// хард код с индексами, пошли они нахуй, потом переделаю
-            var row2 = _userSet.Tables[0].Rows[_itemID + 22];
+            var row1 = _userSet.Tables[0].Rows.Find(_itemIDforUsers);// хард код с индексами, пошли они нахуй, потом переделаю
+            var row2 = _userSet.Tables[0].Rows.Find(_itemIDforUsers);
 
-            var row3 = _employeeSet.Tables[0].Rows[_itemID + 1];
+            var row3 = _employeeSet.Tables[0].Rows.Find(_itemID);
 
             Login_textBox.Text = row1["UserName"].ToString();
             Password_textBox.Text = row2["UserPassword"].ToString();
@@ -73,6 +75,10 @@ namespace kursach
                 _typeAdapter = new SqlDataAdapter(selectTypes, sqlConnection);
                 _userAdapter = new SqlDataAdapter(selectUsers, sqlConnection);
                 _employeeAdapter = new SqlDataAdapter(selectEmployees, sqlConnection);
+
+                _typeAdapter.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                _userAdapter.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                _employeeAdapter.MissingSchemaAction = MissingSchemaAction.AddWithKey;
 
                 _typeAdapter.Fill(_typeSet);
                 _userAdapter.Fill(_userSet);
@@ -106,14 +112,15 @@ namespace kursach
                 !string.IsNullOrWhiteSpace(Login_textBox.Text) && !string.IsNullOrWhiteSpace(Password_textBox.Text) &&
                 !string.IsNullOrWhiteSpace(Name_textBox.Text) && !string.IsNullOrWhiteSpace(LastName_textBox.Text))
             {
-                var row1 = _userSet.Tables[0].Rows[_itemID + 22];// хард код с индексами, пошли они нахуй, потом переделаю
+                var row1 = _userSet.Tables[0].Rows.Find(_itemIDforUsers);// хард код с индексами, пошли они нахуй, потом переделаю
+                var row3 = _typeSet.Tables[0].Rows.Find(_itemIDforUsers);
                 row1["Username"] = Login_textBox.Text;
                 row1["UserPassword"] = Password_textBox.Text;
-                row1["TypeID"] = UserType_comboBox.SelectedIndex + 1;
+                row1["TypeID"] = (UserType_comboBox.SelectedItem as UsersTypes).TypeID.ToString();
 
                 SaveData();
 
-                var row2 = _employeeSet.Tables[0].Rows[_itemID + 1];
+                var row2 = _employeeSet.Tables[0].Rows.Find(_itemID);
                 row2["FirstName"] = Name_textBox.Text;
                 row2["LastName"] = LastName_textBox.Text;
                 row2["Position"] = Position_textBox.Text;

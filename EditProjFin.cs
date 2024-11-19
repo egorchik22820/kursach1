@@ -66,6 +66,12 @@ namespace kursach
 
                 ProjectName_comboBox.DataSource = _projectsList;
 
+                var row = _projFinSet.Tables[0].Rows.Find(_itemID);
+
+                Describtion_textBox.Text = row["ExpenseDescription"].ToString();
+                Date_textBox.Text = row["Date"].ToString();
+                Amount_textBox.Text = row["Amount"].ToString();
+
             }
             else MessageBox.Show("connection is shit");
 
@@ -73,6 +79,9 @@ namespace kursach
 
         private void SaveData()
         {
+            SqlCommandBuilder sqlCommandBuilder2 = new SqlCommandBuilder(_projAdapter);
+            _projAdapter.Update(_projSet.Tables[0]);
+
             SqlCommandBuilder sqlCommandBuilder1 = new SqlCommandBuilder(_projFinAdapter);
             _projFinAdapter.Update(_projFinSet.Tables[0]);
 
@@ -80,6 +89,7 @@ namespace kursach
 
         private void Edit_button_Click(object sender, EventArgs e)
         {
+
             SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(_projFinAdapter);
             if (!string.IsNullOrEmpty(Describtion_textBox.Text) && !string.IsNullOrEmpty(Amount_textBox.Text) &&
                 !string.IsNullOrEmpty(Date_textBox.Text) && !string.IsNullOrWhiteSpace(Describtion_textBox.Text) &&
@@ -88,11 +98,11 @@ namespace kursach
 
                 //int index = _projFinSet.Tables[0].Rows.IndexOf(_projFinSet.Tables[0].Rows[4]);
 
-                var row1 = _projFinSet.Tables[0].Rows.Find(_itemID);// хард код с индексами, пошли они нахуй, потом переделаю
+                var row1 = _projFinSet.Tables[0].Rows.Find(_itemID);
                 row1["ExpenseDescription"] = Describtion_textBox.Text.ToString();
                 row1["Date"] = Date_textBox.Text.ToString();
                 row1["Amount"] = Amount_textBox.Text.ToString();
-                row1["ProjectID"] = ProjectName_comboBox.SelectedIndex + 1;
+                row1["ProjectID"] = (ProjectName_comboBox.SelectedItem as ProjectsClass).ProjID.ToString();
 
                 SaveData();
 
