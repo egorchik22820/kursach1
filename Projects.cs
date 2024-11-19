@@ -114,6 +114,8 @@ namespace kursach
                 {
                     // Удаление выбранной строки
                     projects_dataGridView.Rows.RemoveAt(selectedRowIndex);
+
+
                 }
 
                 SaveData();
