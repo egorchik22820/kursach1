@@ -33,6 +33,9 @@
             Add_button = new Button();
             label1 = new Label();
             projectsRes_dataGridView = new DataGridView();
+            label2 = new Label();
+            Search_textBox = new TextBox();
+            AddRes_button = new Button();
             ((System.ComponentModel.ISupportInitialize)projectsRes_dataGridView).BeginInit();
             SuspendLayout();
             // 
@@ -86,11 +89,41 @@
             projectsRes_dataGridView.Size = new Size(740, 323);
             projectsRes_dataGridView.TabIndex = 10;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(12, 376);
+            label2.Name = "label2";
+            label2.Size = new Size(55, 20);
+            label2.TabIndex = 23;
+            label2.Text = "Поиск:";
+            // 
+            // Search_textBox
+            // 
+            Search_textBox.Location = new Point(12, 399);
+            Search_textBox.Name = "Search_textBox";
+            Search_textBox.Size = new Size(217, 27);
+            Search_textBox.TabIndex = 22;
+            Search_textBox.TextChanged += Search_textBox_TextChanged;
+            // 
+            // AddRes_button
+            // 
+            AddRes_button.Location = new Point(558, 375);
+            AddRes_button.Name = "AddRes_button";
+            AddRes_button.Size = new Size(194, 29);
+            AddRes_button.TabIndex = 24;
+            AddRes_button.Text = "Добавить вид ресурса";
+            AddRes_button.UseVisualStyleBackColor = true;
+            AddRes_button.Click += AddRes_button_Click;
+            // 
             // ProjResources
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 448);
+            Controls.Add(AddRes_button);
+            Controls.Add(label2);
+            Controls.Add(Search_textBox);
             Controls.Add(Delete_button);
             Controls.Add(Edit_button);
             Controls.Add(Add_button);
@@ -111,5 +144,8 @@
         private Button Add_button;
         private Label label1;
         private DataGridView projectsRes_dataGridView;
+        private Label label2;
+        private TextBox Search_textBox;
+        private Button AddRes_button;
     }
 }

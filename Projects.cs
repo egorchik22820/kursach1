@@ -155,7 +155,7 @@ namespace kursach
             }
         }
 
-        
+
 
         private void projects_dataGridView_KeyDown_1(object sender, KeyEventArgs e)//не работает
         {
@@ -172,5 +172,11 @@ namespace kursach
                 e.Handled = true;
             }
         }
+
+        private void Search_textBox_TextChanged(object sender, EventArgs e)
+        {
+            (projects_dataGridView.DataSource as DataTable).DefaultView.RowFilter = $"ProjectName like '%{Search_textBox.Text}%'";
+        }
     }
+    
 }

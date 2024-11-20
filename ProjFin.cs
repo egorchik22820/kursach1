@@ -69,7 +69,7 @@ namespace kursach
 
         private void SaveData()
         {
-            
+
 
             SqlCommandBuilder sqlCommandBuilder1 = new SqlCommandBuilder(_projAdapter);
             _projAdapter.Update(_projSet.Tables[0]);
@@ -187,6 +187,9 @@ namespace kursach
             editProjFin.Show();
         }
 
-        
+        private void Search_textBox_TextChanged(object sender, EventArgs e)
+        {
+            (projectsFin_dataGridView.DataSource as DataTable).DefaultView.RowFilter = $"Проект like '%{Search_textBox.Text}%'";
+        }
     }
 }

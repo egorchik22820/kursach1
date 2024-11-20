@@ -33,6 +33,8 @@
             Add_button = new Button();
             label1 = new Label();
             projects_dataGridView = new DataGridView();
+            Search_textBox = new TextBox();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)projects_dataGridView).BeginInit();
             SuspendLayout();
             // 
@@ -88,11 +90,30 @@
             projects_dataGridView.CellEndEdit += projects_dataGridView_CellEndEdit;
             projects_dataGridView.KeyDown += projects_dataGridView_KeyDown_1;
             // 
+            // Search_textBox
+            // 
+            Search_textBox.Location = new Point(12, 411);
+            Search_textBox.Name = "Search_textBox";
+            Search_textBox.Size = new Size(217, 27);
+            Search_textBox.TabIndex = 10;
+            Search_textBox.TextChanged += Search_textBox_TextChanged;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(12, 388);
+            label2.Name = "label2";
+            label2.Size = new Size(55, 20);
+            label2.TabIndex = 11;
+            label2.Text = "Поиск:";
+            // 
             // Projects
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 459);
+            Controls.Add(label2);
+            Controls.Add(Search_textBox);
             Controls.Add(Delete_button);
             Controls.Add(Edit_button);
             Controls.Add(Add_button);
@@ -113,5 +134,7 @@
         private Button Add_button;
         private Label label1;
         private DataGridView projects_dataGridView;
+        private TextBox Search_textBox;
+        private Label label2;
     }
 }

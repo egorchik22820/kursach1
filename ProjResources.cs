@@ -193,5 +193,18 @@ namespace kursach
                                                         _resSet, _resAdapter);
             editProjFin.Show();
         }
+
+        private void Search_textBox_TextChanged(object sender, EventArgs e)
+        {
+            (projectsRes_dataGridView.DataSource as DataTable).DefaultView.RowFilter = $"Проект like '%{Search_textBox.Text}%'";
+        }
+
+        private void AddRes_button_Click(object sender, EventArgs e)
+        {
+            AddRes addRes = new AddRes();
+            this.Hide();
+            addRes.ShowDialog();
+            this.Show();
+        }
     }
 }
