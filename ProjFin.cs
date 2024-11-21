@@ -1,13 +1,9 @@
 ﻿using Microsoft.Data.SqlClient;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+//using Microsoft.Office.Interop.Excel;
+//using Microsoft.Office.Interop.Excel;
+using System.Runtime.InteropServices;
+using Microsoft.Office.Interop.Excel;
 
 namespace kursach
 {
@@ -110,7 +106,7 @@ namespace kursach
                 {
 
                     DataGridViewRow gridRow = projectsFin_dataGridView.Rows[selectedRowIndex];
-                    DataTable table = (DataTable)projectsFin_dataGridView.DataSource; // Получаем DataTable, привязанный к DataGridView
+                    System.Data.DataTable table = (System.Data.DataTable)projectsFin_dataGridView.DataSource; // Получаем DataTable, привязанный к DataGridView
                     DataRow dataRow = table.NewRow(); // Создаем новый DataRow
 
                     // Копируем данные из DataGridViewRow в DataRow
@@ -161,7 +157,7 @@ namespace kursach
             }
             selectedRowIndex = projectsFin_dataGridView.SelectedRows[0].Index;
             DataGridViewRow gridRow = projectsFin_dataGridView.Rows[selectedRowIndex];
-            DataTable table = (DataTable)projectsFin_dataGridView.DataSource; // Получаем DataTable, привязанный к DataGridView
+            System.Data.DataTable table = (System.Data.DataTable)projectsFin_dataGridView.DataSource; // Получаем DataTable, привязанный к DataGridView
             DataRow dataRow = table.NewRow(); // Создаем новый DataRow
 
             // Копируем данные из DataGridViewRow в DataRow
@@ -189,7 +185,58 @@ namespace kursach
 
         private void Search_textBox_TextChanged(object sender, EventArgs e)
         {
-            (projectsFin_dataGridView.DataSource as DataTable).DefaultView.RowFilter = $"Проект like '%{Search_textBox.Text}%'";
+            (projectsFin_dataGridView.DataSource as System.Data.DataTable).DefaultView.RowFilter = $"Проект like '%{Search_textBox.Text}%'";
         }
+
+        public void ExportToExcel(DataGridView grid)
+        {
+            Microsoft.Office.Interop.Excel.Application Excel = new Microsoft.Office.Interop.Excel.Application();
+            XlReferenceStyle RefStyle = Excel.ReferenceStyle;
+            Excel.Visible = true;
+            Workbook wb = null;
+            String TemplatePath = System.Windows.Forms.Application.StartupPath + @"Экспорт данных.xls";
+            try
+            {
+                wb = Excel.Workbooks.Add(Type.Missing);//Add(TemplatePath); // !!! 
+            }
+            catch (System.Exception ex)
+            {
+                throw new Exception("Не удалось загрузить шаблон для экспорта " + TemplatePath + "\n" + ex.Message);
+            }
+            Worksheet ws = wb.Worksheets.get_Item(1) as Worksheet;
+            for (int j = 2; j < grid.Columns.Count; ++j)
+            {
+                (ws.Cells[1, j - 1] as Microsoft.Office.Interop.Excel.Range).Value2 = grid.Columns[j].HeaderText;
+                for (int i = 0; i < grid.Rows.Count; ++i)
+                {
+                    object Val = grid.Rows[i].Cells[j].Value;
+                    if (Val != null)
+                        (ws.Cells[i + 2, j - 1] as Microsoft.Office.Interop.Excel.Range).Value2 = Val.ToString();
+                }
+            }
+            ws.Columns.EntireColumn.AutoFit();
+            Excel.ReferenceStyle = RefStyle;
+            ReleaseExcel(Excel as Object);
+        }
+
+        private void ReleaseExcel(object excel)
+        {
+            // Уничтожение объекта Excel.
+            Marshal.ReleaseComObject(excel);
+            // Вызываем сборщик мусора для немедленной очистки памяти
+            GC.GetTotalMemory(true);
+        }
+
+        private void Export_button_Click(object sender, EventArgs e)
+        {
+            ExportToExcel(projectsFin_dataGridView);
+
+
+
+
+        }
+
     }
+    
+    
 }

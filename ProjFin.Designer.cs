@@ -114,6 +114,7 @@
             Export_button.TabIndex = 22;
             Export_button.Text = "Экспорт";
             Export_button.UseVisualStyleBackColor = true;
+            Export_button.Click += Export_button_Click;
             // 
             // ProjFin
             // 
