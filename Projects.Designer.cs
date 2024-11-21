@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             Delete_button = new Button();
-            Edit_button = new Button();
             Add_button = new Button();
             label1 = new Label();
             projects_dataGridView = new DataGridView();
@@ -48,19 +47,9 @@
             Delete_button.UseVisualStyleBackColor = true;
             Delete_button.Click += Delete_button_Click;
             // 
-            // Edit_button
-            // 
-            Edit_button.Location = new Point(558, 15);
-            Edit_button.Name = "Edit_button";
-            Edit_button.Size = new Size(94, 29);
-            Edit_button.TabIndex = 8;
-            Edit_button.Text = "Изменить";
-            Edit_button.UseVisualStyleBackColor = true;
-            Edit_button.Click += Edit_button_Click;
-            // 
             // Add_button
             // 
-            Add_button.Location = new Point(458, 15);
+            Add_button.Location = new Point(558, 15);
             Add_button.Name = "Add_button";
             Add_button.Size = new Size(94, 29);
             Add_button.TabIndex = 7;
@@ -115,7 +104,6 @@
             Controls.Add(label2);
             Controls.Add(Search_textBox);
             Controls.Add(Delete_button);
-            Controls.Add(Edit_button);
             Controls.Add(Add_button);
             Controls.Add(label1);
             Controls.Add(projects_dataGridView);
@@ -130,7 +118,6 @@
         #endregion
 
         private Button Delete_button;
-        private Button Edit_button;
         private Button Add_button;
         private Label label1;
         private DataGridView projects_dataGridView;

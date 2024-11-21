@@ -50,7 +50,7 @@
             infoEmployee_dataGridView.Location = new Point(27, 59);
             infoEmployee_dataGridView.Name = "infoEmployee_dataGridView";
             infoEmployee_dataGridView.RowHeadersWidth = 51;
-            infoEmployee_dataGridView.Size = new Size(441, 231);
+            infoEmployee_dataGridView.Size = new Size(407, 118);
             infoEmployee_dataGridView.TabIndex = 0;
             // 
             // infoUser_dataGridView
@@ -61,7 +61,7 @@
             infoUser_dataGridView.Location = new Point(484, 59);
             infoUser_dataGridView.Name = "infoUser_dataGridView";
             infoUser_dataGridView.RowHeadersWidth = 51;
-            infoUser_dataGridView.Size = new Size(441, 231);
+            infoUser_dataGridView.Size = new Size(427, 118);
             infoUser_dataGridView.TabIndex = 1;
             // 
             // infoProj_dataGridView
@@ -69,10 +69,10 @@
             infoProj_dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             infoProj_dataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             infoProj_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            infoProj_dataGridView.Location = new Point(27, 322);
+            infoProj_dataGridView.Location = new Point(27, 216);
             infoProj_dataGridView.Name = "infoProj_dataGridView";
             infoProj_dataGridView.RowHeadersWidth = 51;
-            infoProj_dataGridView.Size = new Size(713, 231);
+            infoProj_dataGridView.Size = new Size(650, 108);
             infoProj_dataGridView.TabIndex = 2;
             // 
             // infoTeams_dataGridView
@@ -80,10 +80,10 @@
             infoTeams_dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             infoTeams_dataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             infoTeams_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            infoTeams_dataGridView.Location = new Point(27, 605);
+            infoTeams_dataGridView.Location = new Point(27, 357);
             infoTeams_dataGridView.Name = "infoTeams_dataGridView";
             infoTeams_dataGridView.RowHeadersWidth = 51;
-            infoTeams_dataGridView.Size = new Size(441, 231);
+            infoTeams_dataGridView.Size = new Size(407, 96);
             infoTeams_dataGridView.TabIndex = 3;
             // 
             // label1
@@ -107,7 +107,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(27, 299);
+            label3.Location = new Point(27, 193);
             label3.Name = "label3";
             label3.Size = new Size(138, 20);
             label3.TabIndex = 6;
@@ -116,7 +116,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(27, 582);
+            label4.Location = new Point(27, 334);
             label4.Name = "label4";
             label4.Size = new Size(157, 20);
             label4.TabIndex = 7;
@@ -126,7 +126,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1324, 872);
+            ClientSize = new Size(956, 479);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);

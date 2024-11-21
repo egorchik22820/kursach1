@@ -35,6 +35,7 @@
             projectsFin_dataGridView = new DataGridView();
             label2 = new Label();
             Search_textBox = new TextBox();
+            Export_button = new Button();
             ((System.ComponentModel.ISupportInitialize)projectsFin_dataGridView).BeginInit();
             SuspendLayout();
             // 
@@ -105,11 +106,21 @@
             Search_textBox.TabIndex = 20;
             Search_textBox.TextChanged += Search_textBox_TextChanged;
             // 
+            // Export_button
+            // 
+            Export_button.Location = new Point(658, 375);
+            Export_button.Name = "Export_button";
+            Export_button.Size = new Size(94, 29);
+            Export_button.TabIndex = 22;
+            Export_button.Text = "Экспорт";
+            Export_button.UseVisualStyleBackColor = true;
+            // 
             // ProjFin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 458);
+            Controls.Add(Export_button);
             Controls.Add(label2);
             Controls.Add(Search_textBox);
             Controls.Add(Delete_button);
@@ -134,5 +145,6 @@
         private DataGridView projectsFin_dataGridView;
         private Label label2;
         private TextBox Search_textBox;
+        private Button Export_button;
     }
 }
